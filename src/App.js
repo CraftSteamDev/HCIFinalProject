@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useEffect, useState } from "react";
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  Route,
+  Link,
+  BrowserRouter,
+  Routes,
+} from "react-router-dom";
+import CreateTimer from "./CreateTimer";
+import Main from "./Main";
+import NavBar from "./NavBar";
 
 function App() {
+  const activeTimer = useState({
+    active: false,
+    timeLeft: 0,
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/createTimer" element={<CreateTimer />} />
+          <Route path="/" default element={<Main />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
