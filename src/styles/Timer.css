@@ -1,0 +1,33 @@
+#clock {
+    margin-top: 5vh;
+    font-size: 20vw;
+    text-align: center;
+}
+
+#clock_label {
+    margin-top: 5vh;
+    font-size: 10vw;
+    text-align: center;
+}
+
+#break {
+    margin-top: 5vh;
+    font-size: 10vw;
+    text-align: center;
+}
+
+#break_label {
+    margin-top: 5vh;
+    font-size: 5vw;
+    text-align: center;
+}
+
+
+.parent {
+    font-size: 0;
+}
+
+.button_container {
+    margin-top: 20px;
+    text-align: center;
+}

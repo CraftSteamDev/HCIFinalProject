@@ -1,0 +1,19 @@
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-height: 80vh;
+}
+
+.next-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    max-height: 80vh;
+}
+.next {
+    width: 30%;
+    max-height: 80vh;
+}
