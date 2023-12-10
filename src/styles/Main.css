@@ -10,8 +10,17 @@
     max-height: 80vh;
     padding: 5px;
     margin-top: 15px;
+    margin-left: 5px
 }
 
 .mainbox {
     margin-top: 20px;
+}
+
+.buttonbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding: 5px;
 }
